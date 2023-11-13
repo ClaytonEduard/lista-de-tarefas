@@ -6,10 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
 
+    <style>
+        body {
+            max-width: 550px;
+            text-align: center;
+            margin: auto;
+            font-size: larger;
+        }
+
+        main div {
+            border: 1px solid black;
+            padding: 25px 20px;
+            display: block;
+        }
+
+        button {
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #DB1F48;
+            color: #fff;
+            transition: background-color 1s;
+        }
+
+        button:hover {
+            background-color: #004369;
+        }
+
+        button:focus,
+        button:active {
+            background-color: black;
+            transition: none;
+        }
+
+
+        main div section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        main div section ul li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+
 </head>
 
 <body>
+    <header>
 
+        <h1>Lista de Tarefas</h1>
+    </header>
+
+    <main>
+        <div>
+            <form action="" id="todo-form">
+                <input type="text" name="" id="task-title-input" placeholder="Informe a sua tarefa ...">
+                <button id="add-task-button">Adicionar</button>
+            </form>
+
+
+            <section>
+                <ul id="todo-list">
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
     <script src="js/index.js"></script>
 </body>
 
